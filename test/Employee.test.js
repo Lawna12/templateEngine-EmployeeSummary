@@ -17,15 +17,9 @@ test("Can set id via constructor argument", () => {
   expect(e.id).toBe(testValue);
 });
 
-test("Can set title via constructor arguments", () => {
-  const testValue = "title";
-  const e = new Employee("Foo", 1, testValue);
-  expect(e.name).toBe(name);
-});
-
 test("Can set email via constructor argument", () => {
   const testValue = "test@test.com";
-  const e = new Employee("Foo", 1, "title", testValue);
+  const e = new Employee("Foo", 1, testValue);
   expect(e.email).toBe(testValue);
 });
 
@@ -41,15 +35,9 @@ test("Can get id via getId()", () => {
   expect(e.getId()).toBe(testValue);
 });
 
-test("Can get title via getTitle()", () => {
-  const testValue = "title";
-  const e = new Employee("Foo", 1, testValue);
-  expect(e.getTitle()).toBe(testValue)
-})
-
 test("Can get email via getEmail()", () => {
   const testValue = "test@test.com";
-  const e = new Employee("Foo", 1, "title", testValue);
+  const e = new Employee("Foo", 1, testValue);
   expect(e.getEmail()).toBe(testValue);
 });
 
