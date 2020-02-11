@@ -8,6 +8,7 @@
     "test": "test"
   },
   "scripts": {
+    "start": "node lib/main2.js",
     "test": "jest --verbose test/*"
   },
   "repository": {
